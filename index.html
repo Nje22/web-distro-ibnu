@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibnu Distro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Jersey Bola</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#products">Produk</a></li>
+                    <li><a href="#order">Pesan</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h2>Selamat Datang di Ibnu Distro</h2>
+            <p>Ibnu Distro menyediakan berbgai produk Jersey bola retro yang berkualitas dan harga terhangkau</p>
+        </div>
+    </section>
+
+    <section id="products">
+        <div class="container">
+            <h2>Produk Kami</h2>
+            <h3><b>Jersey Bola</b></h3>
+            <div class="product-list">
+                <div class="product">
+                    <img src="persib.jpeg" alt="Baju 1">
+                    <h3>Jersey Persib Retro</h3>
+                    <p>Rp5500.000</p>
+                    <button class="order-button" data-product="Baju 1" data-price="100000">Pesan</button>
+                </div>
+                <div class="product">
+                    <img src="pskc.jpeg" alt="Baju 2">
+                    <h3>PSKC Cimahi 2023-24 Seragam Ketiga
+                        Kandang 2023-24</h3>
+                    <p>Rp4500.000</p>
+                    <button class="order-button" data-product="Baju 2" data-price="120000">Pesan</button>
+                </div>
+                <div class="product">
+                    <img src="jersey persib.jpeg" alt="Baju 3">
+                    <h3>Jersey Persib tahun 1997-1998</h3>
+                    <p>Rp150.000</p>
+                    <button class="order-button" data-product="Baju 3" data-price="150000">Pesan</button>
+                </div>
+                <div class="product">
+                    <img src="parma.jpeg" alt="Baju 3">
+                    <h3>Jersey Parma</h3>
+                    <p>Rp7500.000</p>
+                    <button class="order-button" data-product="Baju 3" data-price="150000">Pesan</button>
+                </div>
+                <div class="product">
+                    <img src="MAN UNTD.jpeg" alt="Baju 3">
+                    <h3>Jersey Tim Bapuk</h3>
+                    <p>Rp10.000</p>
+                    <button class="order-button" data-product="Baju 3" data-price="150000">Pesan</button>
+                </div>
+                <div class="product">
+                    <img src="Liverpool.jpeg" alt="Baju 3">
+                    <h3>Jersey Liverpool</h3>
+                    <p>Rp9600.000</p>
+                    <button class="order-button" data-product="Baju 3" data-price="150000">Pesan</button>
+                </div>
+                <div class="product">
+                    <img src="A7X.jpeg" alt="Baju 3">
+                    <h3>Jersey A7X</h3>
+                    <p>Rp8700.000</p>
+                    <button class="order-button" data-product="Baju 3" data-price="150000">Pesan</button>
+                </div>
+                <div class="product">
+                    <img src="Juventus.jpeg" alt="Baju 3">
+                    <h3>Jersey Juventus</h3>
+                    <p>Rp850.000</p>
+                    <button class="order-button" data-product="Baju 3" data-price="150000">Pesan</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="order">
+        <div class="container">
+            <h2>Formulir Pemesanan</h2>
+            <div class="kontainer-formulir">
+                <form action="proses_pesanan.php" method="post">
+                    <div class="grup-formulir">
+                        <label for="produk">Produk:</label>
+                        <input type="text" id="produk" name="produk" required>
+                    </div>
+                    <div class="grup-formulir">
+                        <label for="nama"><strong>Nama:</strong></label>
+                        <input type="text" id="nama" name="nama" required>
+                    </div>
+                    <div class="grup-formulir">
+                        <label for="alamat">Alamat:</label>
+                        <input type="text" id="alamat" name="alamat" required>
+                    </div>
+                    <div class="grup-formulir">
+                        <label for="telepon">Nomor Telepon:</label>
+                        <input type="number" id="telepon" name="telepon" required max="15"
+                            oninput="validateNumberLength(this)">
+                    </div>
+                    <button type="submit">Kirim Pesanan</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Ibnu Distro. Semua hak cipta dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
